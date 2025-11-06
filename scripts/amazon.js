@@ -1,4 +1,4 @@
-import { cart, addToCart, calculateCartQuntity } from "../data/cart.js";
+import { cart, addToCart, calculateCartQuantity } from "../data/cart.js";
 import { products } from "../data/products.js";
 import { formatCurrency } from "./utils/money.js";
 
@@ -82,6 +82,6 @@ document.querySelectorAll(".js-add-to-cart").forEach((button) => {
     addToCart(productId, quantity);
     AddVision(productId);
     document.querySelector(".js-cart-quantity").innerHTML =
-      calculateCartQuntity();
+      calculateCartQuantity();
   });
 });
